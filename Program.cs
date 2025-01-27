@@ -11,8 +11,14 @@ namespace Wk2Ex2
         static void Main(string[] args)
         {
             //declarations
-            int length = '0';
-            int width = '0';
+
+            //input
+            double length = 0;
+            double width = 0;
+
+            //output
+            double area = 0;
+            double perimeter = 0;
 
             //user input the length of the rectangle
             Console.WriteLine("Enter the length of the rectangle: ");
@@ -25,12 +31,12 @@ namespace Wk2Ex2
             width = Convert.ToInt32(Console.ReadLine());
 
             //calculate the area and perimeter of the rectangle
-            int area = length * width;
-            int perimeter = 2 * (length + width);
+            area = length * width;
+            perimeter = 2 * (length + width);
 
             //outputs the results for the area and perimeter
-            Console.WriteLine($"Area of the rectangle: {area}");
-            Console.WriteLine($"Perimeter of the rectangle: {perimeter}");
+            Console.WriteLine($"Area of the rectangle: {area:F0}");
+            Console.WriteLine($"Perimeter of the rectangle: {perimeter:F0}");
         }
     }
 }
